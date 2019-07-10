@@ -14,8 +14,8 @@ export class AuthGuard implements  {
 
 
 	canActivate(
-         next: ActivatedRouteSnapShot,
-         state: RouterStateSnapshot
+         next: ActivatedRouteSnapShot, // future route
+         state: RouterStateSnapshot // future router state
 		): boolean {
 		console.log('AuthGuard#canActivate called');
 		return this.checkLogin(url);
@@ -28,8 +28,10 @@ export class AuthGuard implements  {
 		this.authService.redirectUrl = url;
 
 
-		// Navigate tot he login page with extras 
+		// Navigate to the login page with extras 
+		// TODO: create the login Page
 		this.router.navigate(['/login']);
+
 
 		return false;
 
@@ -37,3 +39,17 @@ export class AuthGuard implements  {
 
 
 }
+
+/**
+Notice that you inject the AuthService and the 
+Router in the constructor. You haven't provided the 
+AuthService yet but it's good to know that you can 
+inject helpful serivces into the route guards
+
+ 
+**/
+
+
+
+
+
