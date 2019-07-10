@@ -11,6 +11,7 @@ import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HeroDetailComponent,
     CrisisListComponent,
     PageNotFoundComponent,
+    LoginComponent,
 
   ],
   imports: [
