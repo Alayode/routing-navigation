@@ -21,6 +21,10 @@ const routes: Routes = [
 		redirectTo: '/heroes',
 		pathMatch: 'full'
 	},
+	{
+  path: 'admin',
+  loadChildren: () => import('./admin/admin.module').then(mod => mod.AdminModule),
+},
 
 	// The ** Path in this route is our wildCard catching component
 	// The router will seelct this route IF the requested URL Doesn't

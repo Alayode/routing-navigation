@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ManageCrisesComponent } from './manage-crises.component';
+import { AdminDashboardComponent } from './admin-dashboard.component';
 
-describe('ManageCrisesComponent', () => {
-  let component: ManageCrisesComponent;
-  let fixture: ComponentFixture<ManageCrisesComponent>;
+describe('AdminDashboardComponent', () => {
+  let component: AdminDashboardComponent;
+  let fixture: ComponentFixture<AdminDashboardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ManageCrisesComponent ]
+      declarations: [ AdminDashboardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ManageCrisesComponent);
+    fixture = TestBed.createComponent(AdminDashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
